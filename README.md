@@ -2,7 +2,7 @@
 
 This work is on trail webrun with deployement on (https://litgene.tumorai.org/). 
 
-Deployment github (https://github.com/vinash85/GENELLM_WEBAPP) can be used for self deployment of the webpage. 
+Deployment github (https://github.com/vinash85/GENELLM_WEBAPP) can be used for self deployment of the webpage.  -Link not working 
 
 Use feedback page on the LitGene tool page or contact authors to provide feedback.
 
@@ -17,7 +17,7 @@ Here is how to run sample code using Docker.
    b. Build docker "docker build . -t litgene"
 3. Run docker image/create container:
 
-   c. "docker run --name Litgene --gpus=all --previleged --ports 8888:8888 -v litgene_location:/home/tailab/LitGene -dit litgene /bin/bash"
+   c. "docker run --name Litgene --gpus=all --privileged -p 8888:8888 -v litgene_location:/home/tailab/LitGene -dit litgene /bin/bash"
 5. Enter docker:
 
    d. "docker exec -it Litgene /bin/bash"
